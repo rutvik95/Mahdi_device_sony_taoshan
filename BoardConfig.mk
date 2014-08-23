@@ -114,7 +114,7 @@ TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 BOARD_CUSTOM_BOOTIMG_MK := device/sony/taoshan/custombootimg.mk
 
 BOARD_USES_QC_TIME_SERVICES := true
-
+TARGET_EXTERNAL_APPS = sdcard0
 TARGET_POWERHAL_NO_TOUCH_BOOST := true
 
 BOARD_HARDWARE_CLASS := device/sony/taoshan/cmhw
