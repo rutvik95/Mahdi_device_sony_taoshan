@@ -84,7 +84,9 @@ PRODUCT_COPY_FILES += \
 # TWRP
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/root/twrp.fstab:recovery/root/etc/twrp.fstab
-
+# PHILZ 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/extra.fstab:recovery/root/etc/extra.fstab
 # Key layouts
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/system/usr/keychars/pmic8xxx_pwrkey.kcm:system/usr/keychars/pmic8xxx_pwrkey.kcm \
