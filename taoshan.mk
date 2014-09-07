@@ -22,6 +22,17 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 
 TARGET_PROVIDES_ADRENO_DRIVER := true
 
+#kernel 
+ifeq ($(TARGET_PREBUILT_KERNEL),)
+	LOCAL_KERNEL := kernel/sony/msm8930
+else
+	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
+endif
+
+
+PRODUCT_COPY_FILES := \
+$(LOCAL_KERNEL):kernel
+
 # OpenGL ES 3.0
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=196608
